@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    android:id="@+id/parent_layout">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="130dp"
+        android:layout_height="121dp"
+
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="6dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/image_name"
+        android:layout_width="217dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Canada"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/image_name2"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="56dp"
+        android:fontFamily="serif-monospace"
+        android:text="Canada"
+        android:textColor="#595757"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_name" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_res"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#4B4C4C"
+        android:text="Explore"
+        android:textSize="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
